@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "About";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var items = new string[] { "one", "two", "three" };
+}
+
+    <h2>@ViewBag.Title</h2>
+    <h3>@ViewBag.Message</h3>
+    <div> 
+        <h4>Listing @items.Length items.</h4>
+        <ul>
+            
+            @foreach (var item in items)
+            {
+                <li>The item name is @item.</li>
+            }
+        </ul>
+    </div>
+
